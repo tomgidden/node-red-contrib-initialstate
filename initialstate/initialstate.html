@@ -1,0 +1,41 @@
+<script type="text/javascript">
+    RED.nodes.registerType('initialstate',{
+        category: 'output',
+        color: '#6D9FD9',
+        defaults: {
+            name: {value:""},
+            bucketKey: {value:""},
+            accessKey: {value:""},
+        },
+        inputs:1,
+        outputs:0,
+        icon: "initialstate.png",
+        align: "right",
+        label: function() {
+            return this.name||"initialstate";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="initialstate">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+      <label for="node-input-bucketKey"><i class="icon-tag"></i> Bucket Key</label>
+      <input type="text" id="node-input-bucketKey">
+    </div>
+    <div class="form-row">
+      <label for="node-input-accessKey"><i class="icon-tag"></i> Access Key</label>
+      <input type="text" id="node-input-accessKey">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="initialstate">
+    <p>Sends an event to a bucket hosted by <a href="https://initialstate.com">Initial State</a> for graphing and analysis.</p>
+
+    <p>Simply, <code>msg.topic</code> is passed as the data event <em>key</em>, while <code>msg.payload</code> is passed as the data event <em>value</em> if it is a string or number.</p>
+
+    <p>Alternatively, <code>msg.payload</code> may be an object containing at least <code>value</code>, and optionally <code>key</code>, and/or <code>date</code> to override the topic and the current timestamp.</p>
+</script>

@@ -1,0 +1,22 @@
+{
+  "name": "node-red-contrib-initialstate",
+  "version": "0.0.1",
+  "description": "Push data to Initial State within Node-RED",
+  "author": "Tom Gidden <tom@gidden.net>",
+  "license": "MIT",
+  "dependencies": {
+    "initial-state": "^0.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tomgidden/node-red-contrib-initialstate.git"
+  },
+  "keywords": [
+    "node-red"
+  ],
+  "node-red": {
+    "nodes": {
+      "initialstate": "initialstate/initialstate.js"
+    }
+  }
+}
