@@ -1,7 +1,7 @@
 # node-red-contrib-initialstate
 
-This [https://nodered.org/](Node-RED) node may be used for passing data
-points to [https://initialstate.com](Initial State) for graphing and
+This [Node-RED](https://nodered.org/) node may be used for passing data
+points to [Initial State](https://initialstate.com) for graphing and
 analysis.
 
 The node pushes an event to an Initial State bucket.
